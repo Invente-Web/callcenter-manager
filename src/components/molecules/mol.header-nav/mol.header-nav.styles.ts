@@ -1,6 +1,6 @@
 import { Colors } from 'consts';
 import styled from 'styled-components';
 
-export const navbar = styled.nav`
+export const NavbarStyle = styled.nav`
   color: ${Colors.white};
 `

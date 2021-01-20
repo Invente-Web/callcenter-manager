@@ -1,3 +1,9 @@
+import { NavbarStyle } from "./mol.header-nav.styles";
+
 export const HeaderNavbar: React.FC<any> = () => {
-  return <>Header</>;
+  return (
+    <NavbarStyle>
+      Header
+    </NavbarStyle>
+  );
 }
