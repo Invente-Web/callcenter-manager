@@ -21,6 +21,15 @@
         "import"
     ],
     "rules": {
+        "max-len": [
+            2,
+            {
+                "ignoreUrls": true,
+                "tabWidth": 2,
+                "code": 120
+            }
+        ],
+        "no-console": "warn",
         "import/no-unresolved": "error",
         "import/no-cycle": "off",
         "import/extensions": "off",
