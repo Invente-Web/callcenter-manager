@@ -1,3 +1,5 @@
+import { createGlobalStyle } from "styled-components";
+
 export const styledTheme = {
     mainColor: 'default',
 }
@@ -72,3 +74,14 @@ export const Colors = {
     concrete: '#95a5a6',
     asbestos: '#7f8c8d',
 }
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+`;

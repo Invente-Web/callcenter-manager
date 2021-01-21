@@ -7,7 +7,7 @@ export default function Index() {
             <Container>
                 <Row>
                     <Col>
-                        <h1>Hello World!</h1>
+                        <h1>Dashboard</h1>
                     </Col>
                 </Row>
             </Container>

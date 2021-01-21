@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import { gridTheme, styledTheme } from 'consts';
+import { GlobalStyle, gridTheme, styledTheme } from 'consts';
 import { GridThemeProvider, BaseCSS } from 'styled-bootstrap-grid';
 import { ThemeProvider } from 'styled-components';
 
@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         gridTheme={gridTheme}
       >
         <>
-          <BaseCSS />
+          <GlobalStyle />
           <Component {...pageProps} />
         </>
       </GridThemeProvider>
