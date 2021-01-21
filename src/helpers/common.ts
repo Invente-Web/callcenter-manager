@@ -6,11 +6,14 @@
  */
 export const getEnv = (tagName: string, defaultValue?: string, disablePrefix?: boolean): string | undefined => {
   const prefix = 'NEXT_PUBLIC_';
-  const env = process.env.public[!disablePrefix ? prefix + tagName : tagName];
-  if (!env && !defaultValue) {
-    throw new Error('Env not found and has no defaultValue');
+  if (process.env.public) {
+    const env = process.env.public[!disablePrefix ? prefix + tagName : tagName];
+    if (!env && !defaultValue) {
+      throw new Error('Env not found and has no defaultValue');
+    }
+    return env || defaultValue;
   }
-  return env || defaultValue;
+  return undefined;
 };
 
 /**
