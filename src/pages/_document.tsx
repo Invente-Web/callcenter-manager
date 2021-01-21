@@ -4,14 +4,12 @@ import Document, {
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
-  // tslint:disable-next-line
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
     try {
       ctx.renderPage = () => originalRenderPage({
-        // tslint:disable-next-line
         enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
       });
 
