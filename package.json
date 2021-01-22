@@ -51,7 +51,8 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,jsx,ts,tsx,css,md}": [
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   },
   "husky": {
