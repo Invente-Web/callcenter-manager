@@ -5,7 +5,10 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb"
+        "airbnb",
+        "plugin:prettier/recommended",
+        "prettier/flowtype",
+        "prettier/react"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -18,9 +21,11 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "import"
+        "import",
+        "prettier"
     ],
     "rules": {
+        "prettier/prettier": "error",
         "max-len": [
             2,
             {
@@ -32,6 +37,7 @@
         "no-console": "warn",
         "import/no-unresolved": "error",
         "import/no-cycle": "off",
+        "import/prefer-default-export": "off",
         "import/extensions": "off",
         "linebreak-style": [
             "error",

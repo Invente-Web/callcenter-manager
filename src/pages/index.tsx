@@ -1,4 +1,4 @@
-import { Container, Col, Row } from 'components';
+import { Container, Col, Row, DashboardIndicators } from 'components';
 import { MainLayout } from 'components/layouts/main/main';
 
 export default function Index() {
@@ -10,6 +10,7 @@ export default function Index() {
             <h1>Dashboard</h1>
           </Col>
         </Row>
+        <DashboardIndicators />
       </Container>
     </MainLayout>
   );

@@ -4,7 +4,7 @@ module.exports = {
   },
   webpack: (config, { webpack }) => {
     const publicEnv = {};
-    Object.keys(process.env).forEach((env) => {
+    Object.keys(process.env).forEach(env => {
       if (env.includes('NEXT_PUBLIC_')) {
         publicEnv[env] = process.env[env];
       }
@@ -12,7 +12,7 @@ module.exports = {
     config.plugins.push(
       new webpack.DefinePlugin({
         'process.env.public': JSON.stringify(publicEnv),
-      }),
+      })
     );
 
     return config;
