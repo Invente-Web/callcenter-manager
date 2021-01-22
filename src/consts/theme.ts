@@ -1,6 +1,8 @@
+import { createGlobalStyle } from 'styled-components';
+
 export const styledTheme = {
     mainColor: 'default',
-}
+};
 
 export const gridTheme = {
     gridColumns: 12, // default 12
@@ -43,7 +45,7 @@ export const gridTheme = {
             // smaller: 540,
         },
     },
-}
+};
 
 export const Colors = {
     white: '#ffffff',
@@ -71,4 +73,15 @@ export const Colors = {
     silver: '#bdc3c7',
     concrete: '#95a5a6',
     asbestos: '#7f8c8d',
-}
+};
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+`;
