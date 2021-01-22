@@ -1,5 +1,8 @@
-import { FontAwesomeIcon, FontAwesomeIconProps } from "@fortawesome/react-fontawesome"
+import {
+  FontAwesomeIcon,
+  FontAwesomeIconProps,
+} from '@fortawesome/react-fontawesome';
 
-export const Icon: React.FC<FontAwesomeIconProps> = (props) => {
-  return <FontAwesomeIcon fixedWidth {...props} />
-}
+export const Icon: React.FC<FontAwesomeIconProps> = props => (
+  <FontAwesomeIcon fixedWidth {...props} />
+);
