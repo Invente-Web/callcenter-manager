@@ -1,10 +1,15 @@
-import { Header } from "components";
+import { Header, Menu } from 'components';
 
-export const MainLayout: React.FC<any> = ({ children }) => {
+interface IMainLayout {
+  children: React.ReactNode;
+}
+
+export const MainLayout: React.FC<IMainLayout> = ({ children }) => {
   return (
     <>
       <Header />
-      {children}
+      <Menu />
+      <div style={{ marginLeft: '15vw', zIndex: 0 }}>{children}</div>
     </>
   );
-}
+};

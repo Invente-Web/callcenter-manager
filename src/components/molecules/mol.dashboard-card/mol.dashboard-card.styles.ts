@@ -12,6 +12,7 @@ export const CardWrapper = styled.div<CardWrapperInterface>`
   box-sizing: border-box;
   padding: 10px;
   position: relative;
+  margin: 0 0 20px 0;
   & h1 {
     color: ${Colors.white};
     font-size: 2.5em;
