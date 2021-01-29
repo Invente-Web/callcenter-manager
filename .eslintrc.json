@@ -5,12 +5,13 @@
     },
     "extends": [
         "plugin:react/recommended",
+        "plugin:typescript/recommended",
         "airbnb",
         "plugin:prettier/recommended",
         "prettier/flowtype",
         "prettier/react"
     ],
-    "parser": "@typescript-eslint/parser",
+    "parser": "eslint-plugin-typescript/parser",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -22,7 +23,8 @@
         "react",
         "@typescript-eslint",
         "import",
-        "prettier"
+        "prettier",
+        "typescript"
     ],
     "rules": {
         "prettier/prettier": "error",
