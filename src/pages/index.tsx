@@ -20,10 +20,10 @@ export default function Index() {
           </Col>
         </Row>
         <Row>
-          <Col xs={12} md={4}>
+          <Col xs={12} md={12} lg={12} xl={12} xxl={4}>
             <DashboardIndicators />
           </Col>
-          <Col xs={12} md={8}>
+          <Col xs={12} md={12} lg={12} xl={12} xxl={8}>
             <DashboardCharts />
           </Col>
         </Row>
