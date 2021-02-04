@@ -1,6 +1,8 @@
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Icon } from 'components';
+import { H1 } from 'components';
+import { Body } from 'components/atom';
 import { Colors } from 'consts';
 import { formatSecondsInHours } from 'helpers';
 import { CardWrapper } from './mol.dashboard-card.styles';
@@ -27,8 +29,8 @@ export const DashboardCard: React.FC<IDashboardCard> = ({
   return (
     <CardWrapper backgroundColor={color}>
       <div>
-        <h1>{formatedValue}</h1>
-        <div>{text}</div>
+        <H1>{formatedValue}</H1>
+        <Body>{text}</Body>
       </div>
       {icon && (
         <div>

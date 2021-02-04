@@ -5,7 +5,7 @@ export const AsideMenuWrapper = styled.aside`
   background-color: ${Colors.wetAsphalt};
   width: 15vw;
   height: calc(100vh - 64px);
-  position: absolute;
+  position: fixed;
   z-index: 1;
 `;
 

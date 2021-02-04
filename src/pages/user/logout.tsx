@@ -1,6 +1,8 @@
+import { H1 } from 'components'
+
 const Index = () => {
   return (
-    <h1>Logout</h1>
+    <H1>Logout</H1>
   )
 }
 

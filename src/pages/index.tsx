@@ -4,16 +4,19 @@ import {
   Row,
   DashboardIndicators,
   DashboardCharts,
+  PageHeader,
 } from 'components';
 import { MainLayout } from 'components/layouts/main/main';
 
 export default function Index() {
+  const pageTitle = "Dashboard";
+
   return (
-    <MainLayout>
+    <MainLayout pageTitle={pageTitle}>
       <Container fluid>
         <Row>
           <Col>
-            <h1>Dashboard</h1>
+            <PageHeader pageName="Dashboard" />
           </Col>
         </Row>
         <Row>

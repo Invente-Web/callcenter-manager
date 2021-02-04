@@ -1,8 +1,21 @@
-import { Col, DefaultCard, Row } from 'components';
+import { Col, DefaultCard, Row, H3 } from 'components';
 import { Colors } from 'consts';
 import { ChartData, Line } from 'react-chartjs-2';
 
 export const DashboardCharts: React.FC<any> = () => {
+  const options = {
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+        }
+      }]
+    },
+    tooltips: {
+      mode: 'label',
+    }
+  }
+
   const hourLabels = [...Array(24)].map(
     (_value, index) => `${String(index).length === 1 ? `0${index}` : index}:00`
   );
@@ -18,6 +31,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.greenSea,
         // backgroundColor: `${Colors.greenSea}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
       {
@@ -25,6 +41,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.red,
         // backgroundColor: `${Colors.red}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
     ],
@@ -38,6 +57,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.sunFlowers,
         // backgroundColor: `${Colors.sunFlowers}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
       {
@@ -45,6 +67,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.red,
         // backgroundColor: `${Colors.red}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
     ],
@@ -58,6 +83,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.sunFlowers,
         // backgroundColor: `${Colors.sunFlowers}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
     ],
@@ -71,6 +99,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.greenSea,
         // backgroundColor: `${Colors.greenSea}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
       {
@@ -78,6 +109,9 @@ export const DashboardCharts: React.FC<any> = () => {
         borderColor: Colors.sunFlowers,
         // backgroundColor: `${Colors.sunFlowers}50`,
         backgroundColor: 'transparent',
+        borderWidth: 2,
+        pointBorderWidth: 5,
+        pointHoverRadius: 5,
         data: randomValues(),
       },
     ],
@@ -87,26 +121,26 @@ export const DashboardCharts: React.FC<any> = () => {
     <Row>
       <Col xs={12} md={6}>
         <DefaultCard>
-          <h3>Ligações entrentes e saíntes por hora</h3>
-          <Line data={mockEntrantesSaintes} />
+          <H3 style={{ textAlign: 'center' }}>Ligações entrentes e saíntes por hora</H3>
+          <Line data={mockEntrantesSaintes} options={options} />
         </DefaultCard>
       </Col>
       <Col xs={12} md={6}>
         <DefaultCard>
-          <h3>Ligações abandonadas e não atendidas por hora</h3>
-          <Line data={mockAbandonadasNaoAtendidas} />
+          <H3 style={{ textAlign: 'center' }}>Ligações abandonadas e não atendidas por hora</H3>
+          <Line data={mockAbandonadasNaoAtendidas} options={options} />
         </DefaultCard>
       </Col>
       <Col xs={12} md={6}>
         <DefaultCard>
-          <h3>Máximo de ligações em fila por hora</h3>
-          <Line data={mockMaxFila} />
+          <H3 style={{ textAlign: 'center' }}>Máximo de ligações em fila por hora</H3>
+          <Line data={mockMaxFila} options={options} />
         </DefaultCard>
       </Col>
       <Col xs={12} md={6}>
         <DefaultCard>
-          <h3>Disponibilidade de agentes por hora</h3>
-          <Line data={mockDisponibilidadeAgentes} />
+          <H3 style={{ textAlign: 'center' }}>Disponibilidade de agentes por hora</H3>
+          <Line data={mockDisponibilidadeAgentes} options={options} />
         </DefaultCard>
       </Col>
     </Row>
