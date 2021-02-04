@@ -1,0 +1,49 @@
+{
+  "googleFonts": {
+    "fonts": [
+      "/assets/fonts/s/roboto/v20/KFOiCnqEu92Fr1Mu51QrIzc.ttf",
+      "/assets/fonts/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjARc9.ttf",
+      "/assets/fonts/s/roboto/v20/KFOkCnqEu92Fr1Mu52xP.ttf",
+      "/assets/fonts/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ABc9.ttf",
+      "/assets/fonts/s/roboto/v20/KFOjCnqEu92Fr1Mu51TzBhc9.ttf",
+      "/assets/fonts/s/roboto/v20/KFOjCnqEu92Fr1Mu51TLBBc9.ttf",
+      "/assets/fonts/s/roboto/v20/KFOkCnqEu92Fr1MmgWxP.ttf",
+      "/assets/fonts/s/roboto/v20/KFOlCnqEu92Fr1MmSU5vAw.ttf",
+      "/assets/fonts/s/roboto/v20/KFOmCnqEu92Fr1Me5Q.ttf",
+      "/assets/fonts/s/roboto/v20/KFOlCnqEu92Fr1MmEU9vAw.ttf",
+      "/assets/fonts/s/roboto/v20/KFOlCnqEu92Fr1MmWUlvAw.ttf",
+      "/assets/fonts/s/roboto/v20/KFOlCnqEu92Fr1MmYUtvAw.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCp6KVjbNBYlgoKejZftWyI.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCu6KVjbNBYlgoKeg7z.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCp6KVjbNBYlgoKejYHtGyI.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCp6KVjbNBYlgoKejZPsmyI.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCv6KVjbNBYlgoC1CzTtw.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCs6KVjbNBYlgo6eA.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3Ttw.ttf",
+      "/assets/fonts/s/ubuntu/v15/4iCv6KVjbNBYlgoCxCvTtw.ttf"
+    ],
+    "style": [
+      "/assets/fonts/style/Roboto.css",
+      "/assets/fonts/style/Ubuntu.css"
+    ]
+  },
+  "arguments": {
+    "fonts": [
+      "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap",
+      "https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    ],
+    "options": {
+      "publicFolder": "public",
+      "fontsFolder": "assets/fonts",
+      "styleFolder": "style",
+      "resetFolder": true,
+      "prevent": true,
+      "outputData": {
+        "name": "data.json",
+        "path": "public/assets/fonts",
+        "full": "public/assets/fonts/data.json"
+      }
+    }
+  },
+  "buildTime": "2021-02-04T02:18:07.156Z"
+}

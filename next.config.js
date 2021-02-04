@@ -2,7 +2,7 @@ module.exports = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  webpack: (config, { webpack }) => {
+  webpack: (config, { webpack, isServer }) => {
     const publicEnv = {};
     Object.keys(process.env).forEach(env => {
       if (env.includes('NEXT_PUBLIC_')) {
@@ -14,6 +14,10 @@ module.exports = {
         'process.env.public': JSON.stringify(publicEnv),
       })
     );
+
+    if (isServer) {
+      require("./scripts/google-fonts");
+    }
 
     return config;
   },

@@ -13,20 +13,17 @@ export const CardWrapper = styled.div<CardWrapperInterface>`
   padding: 10px;
   position: relative;
   margin: 0 0 20px 0;
-  & h1 {
-    color: ${Colors.white};
-    font-size: 2.5em;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    z-index: 2;
-  }
   & .dashboard-icon {
     color: white;
     font-size: 64px;
     opacity: 0.5;
     position: absolute;
     z-index: 1;
-    top: 25px;
-    right: 10px;
+    padding: 25px 10px;
+    height: 100%;
+    box-sizing: border-box;
+    top: 0px;
+    right: 0px;
+    background-color: ${Colors.white}50;
   }
 `;

@@ -3,6 +3,7 @@ import { Colors } from 'consts';
 
 export const StyledLi = styled.li`
   list-style: none;
+  transition: all 0.4s ease-in-out;
   & a {
     color: ${Colors.white};
     display: block;
@@ -12,8 +13,11 @@ export const StyledLi = styled.li`
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    border-left: 0px;
   }
   & :hover {
     background-color: ${Colors.midnightBlue};
+    border-left: 5px solid ${Colors.white}50;
+    padding-left: 5px;
   }
 `;
