@@ -1,5 +1,7 @@
 export const routes = {
-  home: './',
+  dashboard: '/',
+  callHistory: '/callHistory',
+  callsReports: '/callsReports',
   userRoutes: {
     logout: 'user/logout'
   }
