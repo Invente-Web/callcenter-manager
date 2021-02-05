@@ -14,7 +14,7 @@ import {
 export const DashboardIndicators: React.FC = () => (
   <>
     <Row>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Total Calls"
           value="10"
@@ -22,7 +22,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faPhone}
         />
       </Col>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Total Callers"
           value="10"
@@ -30,9 +30,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faHeadset}
         />
       </Col>
-    </Row>
-    <Row>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Total Avaiable Agents"
           value="10"
@@ -40,7 +38,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faUsers}
         />
       </Col>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Total Loggedin Agents"
           value="10"
@@ -48,9 +46,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faSignInAlt}
         />
       </Col>
-    </Row>
-    <Row>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Total Abandoned Calls"
           value="10"
@@ -58,7 +54,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faPhoneSlash}
         />
       </Col>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Avg Hold Time"
           value="600"
@@ -67,9 +63,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faPauseCircle}
         />
       </Col>
-    </Row>
-    <Row>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Avg Talk Time"
           value="600"
@@ -78,7 +72,7 @@ export const DashboardIndicators: React.FC = () => (
           icon={faStopwatch}
         />
       </Col>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={3} lg={3} xl={3} xxl={6}>
         <DashboardCard
           text="Max Waiting Calls"
           value="10"
