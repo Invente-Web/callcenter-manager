@@ -11,7 +11,7 @@ export const HeaderNavbar: React.FC<any> = () => {
     <NavbarStyled>
       <Brand>{appName}</Brand>
       <NavbarItemsUl>
-        <NavbarItem routeTo={routes.home}>
+        <NavbarItem routeTo={routes.dashboard}>
           <Icon icon={faHome} size="2x" />
         </NavbarItem>
         <NavbarItem routeTo={routes.userRoutes.logout}>

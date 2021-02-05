@@ -2,10 +2,7 @@ import {
   Container,
   Col,
   Row,
-  DashboardIndicators,
-  DashboardCharts,
   PageHeader,
-  H1,
 } from 'components';
 import { MainLayout } from 'components/layouts/main/main';
 
